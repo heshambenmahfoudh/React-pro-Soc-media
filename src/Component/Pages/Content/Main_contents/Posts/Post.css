@@ -1,0 +1,62 @@
+.post_story .p_story_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.post_story .p_story_head li {
+  width: 50%;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.story {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -99;
+}
+
+.story article {
+  width: calc(100% / 4);
+  height: 190px;
+  position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center center;
+}
+.story article svg {
+  position: absolute;
+  bottom: 40px;
+  width: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 35px;
+  background: #1876f2;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.story article img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 3px solid #1876f2;
+}
+.story article p {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+  color: #ffff;
+}

@@ -1,0 +1,59 @@
+.shortcurt {
+  margin-top: 15px;
+}
+.shortcurt_links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.shortcurt_head h3 {
+  font-size: 16px;
+  color: rgb(111, 116, 116);
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.shortcurt_links small {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+.shortcurt_links li a {
+  padding: 18px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #000;
+  font-size: 130px;
+  font-weight: normal;
+}
+.shortcurt_links img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+}
+.shortcurt_links li a:hover {
+  background-color: #efefef;
+}
+
+@media (max-width: 1200px) {
+  .shortcurt {
+    display: none;
+  }
+  .shortcurt_head h3 {
+    display: none;
+  }
+  .shortcurt_links small {
+    display: none;
+  }
+  .shortcurt_links img {
+    width: 40px;
+  }
+}

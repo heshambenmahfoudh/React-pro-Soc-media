@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #efefef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  padding: 0 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  position: relative;
+  top: 70px;
+}
+.content .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.left_sidbar {
+  flex-basis: 20%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+}
+.right_sidbar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+}
+.main_content {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1200px) {
+  .left_sidbar {
+    flex-basis: 9%;
   }
-  to {
-    transform: rotate(360deg);
+  .right_sidbar {
+    flex-basis: 27%;
+  }
+  .content .container {
+    column-gap: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .left_sidbar {
+    flex-basis: 0%;
+    min-width: 0;
+    /* gap: 0; */
+  }
+  .right_sidbar {
+    flex-basis: 10%;
+  }
+  .content .container {
+    display: flex;
+    column-gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .left_sidbar {
+    flex-basis: 0%;
+    min-width: 0;
+    /* gap: 0; */
+  }
+  .right_sidbar {
+    flex-basis: 0%;
+  }
+  .content .container {
+    display: flex;
+    column-gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .content .container {
+    /* column-gap: 10px; */
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .content .container {
+    column-gap: 0;
   }
 }
