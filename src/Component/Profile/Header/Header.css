@@ -1,0 +1,117 @@
+.header_profile {
+  position: relative;
+  top: 70px;
+}
+
+.header_profile img {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.header_profile .pro_details {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-content: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+.header_profile .pro_details_l {
+  display: flex;
+  gap: 15px;
+}
+.header_profile .pro_details_l img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 0;
+}
+.pro_details_l .pro_details_text {
+  display: flex;
+  flex-direction: column;
+}
+.pro_details_l .pro_details_text h4 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.pro_details_l .pro_details_text span {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.pro_details_l .pro_details_text div {
+  display: flex;
+  gap: 10px;
+}
+.pro_details_l .pro_details_text div img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.pro_details_r div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.pro_details_r div button:first-child {
+  background-color: rgb(216, 212, 206);
+  color: #000;
+
+  border: 1px solid rgb(216, 212, 206);
+}
+.pro_details_r div button:last-child {
+  background: #1876f2;
+  color: #fff;
+  border: 1px solid #1876f2;
+}
+.pro_details_r div button:first-child svg {
+  font-size: 19px;
+  color: #000;
+}
+.pro_details_r div button:last-child svg {
+  font-size: 19px;
+  color: #fff;
+}
+.pro_details_r div button {
+  width: fit-content;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  color: #000;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 0.6px;
+}
+.pro_details_r span {
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgb(216, 212, 206);
+  float: right;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.pro_details_r span svg {
+  transform: rotate(90deg);
+}
+@media (max-width: 768px) {
+  .header_profile .pro_details {
+    flex-direction: column;
+  }
+  .pro_details_r div {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .pro_details_r span {
+    float: left;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .header_profile img {
+    height: 300px;
+  }
+}

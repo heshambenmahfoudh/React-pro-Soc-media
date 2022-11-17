@@ -1,0 +1,244 @@
+.sidbar_head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.head_img {
+  width: 40px;
+  height: 40px;
+}
+
+.head_img img {
+  border-radius: 50%;
+}
+.head_title h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.head_title small {
+  font-size: 15px;
+  color: rgb(182, 182, 182);
+  letter-spacing: 1.4px;
+}
+
+.sidbar_links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  z-index: 99999;
+}
+
+.sidbar_links li:hover::before {
+  content: '';
+  position: absolute;
+  height: 50px;
+  background-color: #1876f2;
+  width: 5px;
+}
+.sidbar_links li:hover {
+  width: 100%;
+  height: 100%;
+
+  background-color: #efefef;
+}
+
+.sidbar_links li:nth-child(3):hover .child_notfication {
+  visibility: visible;
+  transform: translateY(0);
+}
+.sidbar_links li:nth-child(3) .child_notfication {
+  position: absolute;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: #fff;
+  transition: 0.2s 0s;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 380px;
+  top: 0;
+  left: 106%;
+  z-index: 100;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.sidbar_links .child_notfication article:not(:last-child) {
+  margin-bottom: 13px;
+}
+.sidbar_links .child_notfication article {
+  display: flex;
+  gap: 10px;
+  line-height: 1.2;
+}
+
+.sidbar_links .child_notfication img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+}
+
+.sidbar_links .child_notfication .notfication_text p {
+  font-size: 13.5px;
+  letter-spacing: 0.7px;
+}
+.sidbar_links .child_notfication .notfication_text b {
+  font-size: 14.7px;
+}
+.sidbar_links .child_notfication .notfication_text small {
+  color: rgb(182, 182, 182);
+  font-size: 12px;
+}
+
+.sidbar_links li {
+  position: relative;
+}
+.sidbar_links li:nth-child(3) span {
+  position: absolute;
+  font-size: 10px;
+  width: 24px;
+  height: 18px;
+  top: 6px;
+  left: 22px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
+}
+.sidbar_links li:nth-child(4) span {
+  position: absolute;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  top: 8px;
+  left: 28px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.sidbar_links li a svg {
+  color: rgb(127, 127, 177);
+  font-size: 21px;
+  font-weight: 900;
+}
+.sidbar_links li a {
+  padding: 18px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #000;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.sidbar_links li a:hover {
+  background-color: #efefef;
+  color: #1876f2;
+}
+.sidbar_links li a:hover .l_icon {
+  color: #1876f2;
+}
+
+.sidbar_post {
+  margin-top: 20px;
+}
+
+.sidbar_post button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #fff;
+  background-color: #1876f2;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .sidbar_head {
+    display: none;
+  }
+  .sidbar_links {
+    width: 100%;
+    z-index: 5;
+  }
+  .sidbar_links li h4 {
+    display: none;
+  }
+  .sidbar_links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .sidbar_links li a svg {
+    font-size: 23px;
+  }
+  .sidbar_links li:nth-child(3) span {
+    left: 40px;
+  }
+  .sidbar_links li:nth-child(4) span {
+    left: 49px;
+  }
+  .sidbar_links li:nth-child(3) .child_notfication {
+    top: 0;
+    left: 115%;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidbar_links {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sidbar_links {
+    width: 100px;
+    z-index: 5000;
+  }
+  .sidbar_links li:nth-child(3) .child_notfication {
+    top: 0;
+    left: -390%;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidbar_links {
+    width: 60px;
+    z-index: 5;
+  }
+  .sidbar_links li a svg {
+    font-size: 19px;
+  }
+  .sidbar_links li:nth-child(3) span {
+    left: 20px;
+  }
+  .sidbar_links li:nth-child(4) span {
+    left: 15px;
+    top: 6px;
+  }
+  .sidbar_links li:nth-child(3) .child_notfication {
+    min-width: 300px;
+    top: 0;
+    left: -516%;
+  }
+}

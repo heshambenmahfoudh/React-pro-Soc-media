@@ -1,0 +1,91 @@
+.create_post {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.c_post_user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.c_post_user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c_post_user p {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.c_post_user small {
+  font-size: 12.3px;
+  color: rgb(148, 142, 134);
+}
+
+.c_post_user small svg {
+  font-size: 9.5px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.c_post_input textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-color: transparent;
+  border-bottom: 1px solid #ccc;
+  max-height: 50px;
+  margin-bottom: 10px;
+}
+.c_post_input {
+  margin-left: 55px;
+}
+.c_post_link {
+  display: flex;
+}
+
+.c_post_link a {
+  display: flex;
+  align-items: center;
+  font-size: 14.5px;
+}
+.c_post_link a:not(:last-child) {
+  margin-right: 30px;
+}
+.c_post_link svg {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.c_post_link a:first-child svg {
+  color: red;
+}
+.c_post_link a:nth-child(2) svg {
+  color: green;
+}
+.c_post_link:last-child svg {
+  color: yellow;
+}
+
+@media (max-width: 576px) {
+  .c_post_link a:not(:last-child) {
+    margin-right: 5px;
+  }
+  .c_post_input {
+    margin-left: 0px;
+  }
+  .c_post_link a {
+    font-size: 14px;
+  }
+  .c_post_link svg {
+    font-size: 16px;
+  }
+}

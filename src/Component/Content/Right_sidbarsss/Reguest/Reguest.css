@@ -1,0 +1,61 @@
+.request .head_req {
+  margin-bottom: 15px;
+}
+.request .head_req h3 {
+  font-size: 15px;
+  color: rgb(111, 116, 116);
+  letter-spacing: 0.5px;
+}
+
+.req_number article {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.req_number article div:first-child {
+  display: flex;
+  align-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.req_number article div:first-child img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+}
+.req_number article div:first-child h4 {
+  font-size: 13px;
+}
+.req_number article div:first-child small {
+  font-weight: bold;
+  font-size: 12px;
+  color: rgb(172, 168, 163);
+  letter-spacing: 0.3px;
+  margin-top: -2px;
+}
+.req_number article .btn {
+  display: flex;
+  align-content: center;
+  gap: 15px;
+}
+.req_number article .btn button {
+  padding: 7px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #efefef;
+}
+.req_number article .btn button:not(:last-child) {
+  color: #fff;
+  background-color: rgb(58, 58, 199);
+  border: 1px solid rgb(58, 58, 199);
+}
+
+@media (max-width: 992px) {
+  .request {
+    display: none;
+  }
+}

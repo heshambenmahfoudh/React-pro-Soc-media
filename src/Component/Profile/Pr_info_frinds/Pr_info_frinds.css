@@ -1,0 +1,33 @@
+.h_friends {
+  display: flex;
+  justify-content: space-between;
+}
+.h_friends div {
+  margin-bottom: 15px;
+}
+.h_friends h4 {
+  font-size: 17px;
+}
+
+.h_friends span {
+  font-size: 12px;
+}
+.h_friends a {
+  color: #1876f2;
+  font-size: 15px;
+}
+.all_pfriens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.all_pfriens img {
+  border-radius: 5px;
+}
+.all_pfriens article span {
+  margin-top: 5px;
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
