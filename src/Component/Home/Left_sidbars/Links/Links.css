@@ -207,8 +207,10 @@
   .sidbar_links {
     position: fixed;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 30%;
+    transform: translateY(-30%); */
+    top: 70px;
+    right: 0;
   }
   .sidbar_links {
     width: 100px;
