@@ -1,5 +1,5 @@
 import React from 'react'
-import './Content.css'
+import './Home.css'
 
 import L_sidbar from './Left_sidbars/Links/Links'
 import Shortcut from './Left_sidbars/Shortcut/Shortcut'
@@ -9,7 +9,7 @@ import Post from './Main_contents/Posts/Post'
 import Reguest from './Right_sidbarsss/Reguest/Reguest'
 import Message from './Right_sidbarsss/Message/Message'
 
-const Content = () => {
+const Home = () => {
   return (
     <div className="content">
       <div className="container">
@@ -34,4 +34,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Home

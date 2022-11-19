@@ -1,6 +1,6 @@
 import React from 'react'
-import Content_post from '../../Content/Main_contents/Content_post/Content_post'
-import Create_post from '../../Content/Main_contents/Create_post/Create_post'
+import Content_post from '../../Home/Main_contents/Content_post/Content_post'
+import Create_post from '../../Home/Main_contents/Create_post/Create_post'
 import './Content_profile.css'
 import { BsEmojiSmile } from 'react-icons/bs'
 import Pr_info_photo from '../Pr_info_photo/Pr_info_photo'
